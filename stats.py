@@ -14,3 +14,5 @@ def char_each_num(contents):
 		dict_num[charecter] = dict_num.get(charecter, 0) + 1
 	return dict_num
 
+def sort_dict(my_dict):
+	return dict(sorted(my_dict.items(), key=lambda x:x[1], reverse=True))
